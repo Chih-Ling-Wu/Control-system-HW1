@@ -2,7 +2,7 @@ clc
 clear all
 subplot (1,2,1)
 fplot (@(x) -sqrt(cos(x)) + 3, [-pi/2, pi/2])
-title('sqrt(cos(x))+3');
+title('-sqrt(cos(x))+3');
 xlabel('x');
 
 subplot(1,2,2)
