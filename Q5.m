@@ -6,5 +6,11 @@ title('-sqrt(cos(x))+3');
 xlabel('x');
 
 subplot(1,2,2)
-syms x y
-ezplot((x.^2/4 - y.^2/16), [-2,2, -4,4])
+X = [-2:0.01:2]
+Y = [-4:0.01:4]
+[x, y] = meshgrid(X, Y)
+f = (x.^2/(2^2)) - (y.^2/(4^2))
+contour(x,y,f)
+title('x^2/(2^2) - y^2/(4^2)');
+xlabel('x');
+ylabel('y');
